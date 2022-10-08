@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginPage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.loginPage input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 10px #999;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    font-size: calc(5px + 0.7vw);
+    font-weight: 300;
+}
+
+.loginPage button {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    background-color:yellowgreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+.loginPage button:hover {
+    background-color: orange;
+    box-shadow: 0 0 10px yellow;
+}
+
+.mainPage {
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+    justify-content: space-between;
+    background-color: chocolate;
+}
+
+.sideBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: #000;
+    box-shadow: 0 0 5px black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.sideBar .logo {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.logoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sideBar .nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 15px 0;
+    transition: 0.2s;
+}
+
+.sideBar .nav {
+    width: 100%;
+}
+
+.sideBar .nav ul li:hover {
+    width: 100%;
+    background-color: orange;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.sideBar button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sideBar button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.mainPageContent {
+    width: 75%;
+    min-height: 100vh;
+    position: relative;
+    left: 25%;
+    padding: 50px;
+    text-align: center;
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+}
+.homePage h1{
+    color: white;
+    border-bottom: 5px #000;
+}
+.homePage h2{
+    color: black;
+}
+.StudentPage{
+    display: none;
+    flex-direction: column;
+}
+.tichersPage{
+    display: none;
+    flex-direction: column;
+}
+.ClasesPage{
+    display: none;
+    flex-direction: column;
+}
+
+.StudentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.StudentContainer div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+.StudentContainer div:nth-child(2n) {
+    background-color: black;
+    color: white;
+}
+
+.StudentContainer div:hover {
+    background-color: rgb(128, 47, 0);
+    color: white;
+    cursor: pointer;
+}
+.StudentPageLogos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+.tichersContainer div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+.tichersContainer div:nth-child(2n) {
+    background-color: black;
+    color: white;
+}
+
+.tichersContainer div:hover {
+    background-color: rgb(128, 47, 0);
+    color: white;
+    cursor: pointer;
+}
+.TichersPageLogos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+
+.ClasesContainer div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
+.ClasesContainer div:nth-child(2n) {
+    background-color: black;
+    color: white;
+}
+
+.ClasesContainer div:hover {
+    background-color: rgb(128, 47, 0);
+    color: white;
+    cursor: pointer;
+}
+.TichersPageLogos{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 5px 0;
+    padding: 10px 0;
+}
