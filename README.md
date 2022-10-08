@@ -1,1 +1,77 @@
-# School-Journal
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="loginPage" id="loginPage">
+            <input type="login" id="userLogin" placeholder="Login">
+            <input type="password" id="userPassword" placeholder="Password">
+            <button id="signIn">Увійти</button>
+        </div>
+
+        <div class="mainPage" id="mainPage">
+            <div class="sideBar">
+                <div class="logo"></div>
+                <div class="logoContainer">
+                    <div>
+                        <span>Електронний журнал</span>
+                        <p>Вітаємо, <span id="userName" class="userName">user</span></p>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li class="Home" id="Home">Головна</li>
+                        <li class="Student" id="Student">Учні</li>
+                        <li class="tichers" id="tichers">Вчителі</li>
+                        <li class="Clases" id="Clases">Класи</li>
+                    </ul>
+                </div>
+                <button id="logOut">Log out</button>
+            </div>
+
+            <div class="mainPageContent">
+               <div class="homePage" id="homePage">
+                <h1>Привіт,ласкаво просимо на ваш шкільний Журнал</h1>
+                <br>
+                <h2>Цей сайт знадобиться вам для додавання учнів в журнал вашої школи, та оцінювання учнів, і встановлення статистики від найкращих до найгірших(За оцінками)</h2>
+            </div>
+            <div class="StudentPage" id="StudentPage">
+                <div class="StudentPageLogos">
+                    <h2>Імя:</h2>
+                    <h2>Вік:</h2>
+                    <h2>Клас:</h2>
+                    <h2>Оцінка:</h2>
+                </div>
+                <div class="StudentContainer"></div>
+            </div>
+            <div class="tichersPage" id="tichersPage">
+                <div class="TichersPageLogos">
+                    <h2>Імя:</h2>
+                    <h2>Вік:</h2>
+                    <h2>Шкільний предмет:</h2>
+                </div>
+                <div class="tichersContainer"></div>
+            </div>
+            <div class="ClasesPage" id="ClasesPage">
+                <div class="ClasesContainer"></div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
